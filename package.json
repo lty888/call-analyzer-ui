@@ -1,0 +1,30 @@
+{
+  "name": "call-analyzer-ui",
+  "version": "1.0.0",
+  "description": "话单分析工具 - 支持通话统计、联系人分析、时间分析",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64",
+    "build:dir": "electron-builder --dir"
+  },
+  "build": {
+    "appId": "com.lty888.call-analyzer",
+    "productName": "话单分析工具",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": ["call-log", "analyzer", "electron"],
+  "author": "lty888",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  }
+}
